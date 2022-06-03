@@ -1,0 +1,44 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    img{
+        grid-column: 1 / 13;
+        grid-row: 1 / 8;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    h1{
+        position: relative;
+        font-family: 'Secular One', sans-serif;
+        font-size: 4rem;
+        color: rgb(255, 255, 255);
+        grid-column: 9 / 12;
+        grid-row: 5 / 7;
+        font-weight: bold;
+    }
+    h4{
+        position: relative;
+        font-family: 'Secular One', sans-serif;
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        grid-column: 9 / 12;
+        grid-row: 6 / 7;
+        font-weight: bold;
+        margin-top: 90px;
+    }
+    button{
+        font-family: 'Secular One', sans-serif;
+        position: relative;
+        grid-column: 11 / 12;
+        grid-row: 6 / 7;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        background-color: white;
+        &:hover{
+            background-color: blueviolet;
+            color: white;
+        }
+    }
+}
